@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resilience Assessment</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f0f0f0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 15px 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        header .logo img {
+            width: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        /* Resilience Assessment Section */
+        .resilience-section {
+            padding: 60px 20px;
+            background-color: #1f1f1f;
+            text-align: center;
+        }
+
+        .resilience-section h2 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #ff9800;
+        }
+
+        .resilience-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .resilience-text {
+            flex: 1 1 40%;
+            max-width: 500px;
+            text-align: left;
+            padding: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .resilience-text h3 {
+            color: #ff9800;
+            margin-bottom: 15px;
+        }
+
+        .resilience-text p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .resilience-images, .resilience-video {
+            flex: 1 1 40%;
+            max-width: 500px;
+            padding: 10px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        .resilience-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .resilience-images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .resilience-video iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #1f1f1f;
+            color: #f0f0f0;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Website Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resilience">Resilience Assessment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Resilience Assessment Section -->
+    <section class="resilience-section" id="resilience">
+        <h2>Resilience Assessment</h2>
+        <div class="resilience-content">
+            <!-- Text Content -->
+            <div class="resilience-text">
+                <h3>What is Resilience Assessment?</h3>
+                <p>
+                    In today’s rapidly changing world, businesses, organizations, and communities face a range of unpredictable challenges, from natural disasters to economic disruptions. Resilience has become a key focus for those looking to thrive amid uncertainty. But what exactly is resilience, and how do we measure it? This is where Resilience Assessment comes into play.
+
+                    What is Resilience?
+                    Resilience refers to the ability of a system, whether it's a community, organization, or ecosystem, to withstand, adapt, and recover from adverse conditions. In essence, it's about bouncing back from difficulties and continuing to function despite disruptions.
+                    
+                    Resilience Assessment Defined
+                    A Resilience Assessment is a systematic process that evaluates a system's ability to cope with and adapt to changes, stressors, or shocks. It involves identifying vulnerabilities and strengths within the system, analyzing potential risks, and devising strategies to enhance resilience. The goal is to ensure that the system can not only survive unexpected events but also adapt and thrive in the long term.
+                    
+                    This assessment is crucial across various sectors, including:
+                    
+                    Urban planning (for cities to withstand disasters)
+                    Business continuity (for companies to survive economic shocks)
+                    Environmental management (for ecosystems facing climate change)
+                </p>
+            </div>
+
+            <!-- Images for Visual Appeal -->
+            <div class="resilience-images">
+                <img src="rsei2.jpg" alt="Resilience Planning">
+                <img src="resi1.jpg" alt="Community Resilience" style="margin-top: 20px;">
+            </div>
+
+            <!-- Embedded Video Explanation -->
+            <div class="resilience-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VNCL1glwyOI?si=caUuy3Zy6nfvypMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Climate Change Tool. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customize the Tool for Specific Geographic or Industry Needs</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f0f0f0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 15px 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        header .logo img {
+            width: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        /* Geographic/Industry Tool Section */
+        .customize-section {
+            padding: 60px 20px;
+            background-color: #1f1f1f;
+            text-align: center;
+        }
+
+        .customize-section h2 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #ff9800;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .text-content {
+            flex: 1 1 40%;
+            max-width: 500px;
+            text-align: left;
+            padding: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .text-content h3 {
+            color: #ff9800;
+            margin-bottom: 15px;
+        }
+
+        .text-content p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .images, .video {
+            flex: 1 1 40%;
+            max-width: 500px;
+            padding: 10px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        .images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #1f1f1f;
+            color: #f0f0f0;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Website Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#customize-tool">Geographic or Industry Tool</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Geographic/Industry Tool Section -->
+    <section class="customize-section" id="customize-tool">
+        <h2>Customize the Tool for Specific Geographic or Industry Needs</h2>
+        <div class="content">
+            <!-- Text Content -->
+            <div class="text-content">
+                <h3>Why Customize the Tool?</h3>
+                <p>
+                    Customizing tools for specific geographic regions or industries is essential to ensure relevance and effectiveness. Different regions face different environmental, economic, and social challenges. Industries, too, have unique requirements depending on their operations and impact on the environment.
+                </p>
+                <p>
+                    This customization enhances the utility of tools by adapting them to the distinct needs of sectors, regions, or ecosystems, helping to drive more targeted and effective action.
+                </p>
+            </div>
+
+            <!-- Images for Visual Appeal -->
+            <div class="images">
+                <img src="custom 1.png" alt="Geographic Focus">
+                <img src="custom 2.jpg" alt="Industry Focus" style="margin-top: 20px;">
+            </div>
+
+            <!-- Embedded Video Explanation -->
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HCDVN7DCzYE?si=A2Na8S8g6SGJgG4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Customization Tool for Geographic or Industry Needs. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Biodiversity</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f0f0f0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 15px 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        header .logo img {
+            width: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        /* Biodiversity Section */
+        .biodiversity-section {
+            padding: 60px 20px;
+            background-color: #1f1f1f;
+            text-align: center;
+        }
+
+        .biodiversity-section h2 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #ff9800;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .text-content {
+            flex: 1 1 40%;
+            max-width: 500px;
+            text-align: left;
+            padding: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .text-content h3 {
+            color: #ff9800;
+            margin-bottom: 15px;
+        }
+
+        .text-content p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .images, .video {
+            flex: 1 1 40%;
+            max-width: 500px;
+            padding: 10px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        .images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #1f1f1f;
+            color: #f0f0f0;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Website Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#biodiversity">Biodiversity</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Biodiversity Section -->
+    <section class="biodiversity-section" id="biodiversity">
+        <h2>Biodiversity</h2>
+        <div class="content">
+            <!-- Text Content -->
+            <div class="text-content">
+                <h3>What is Biodiversity?</h3>
+                <p>
+                    Biodiversity refers to the variety of life on Earth, encompassing the different species of plants, animals, microorganisms, and the ecosystems they form. It is a crucial aspect of our planet, influencing everything from climate regulation to food security. However, biodiversity is under threat like never before. This blog explores the significance of biodiversity, the threats it faces, and the urgent need for conservation.
+
+                    Understanding Biodiversity
+                    Biodiversity can be broken down into three main components:
+                    
+                    Species Diversity: This refers to the variety of species within a given habitat or ecosystem. High species diversity typically indicates a healthy ecosystem.
+                    
+                    Genetic Diversity: Within each species, there is genetic variation among individuals. This diversity allows populations to adapt to changing environments and resist diseases.
+                    
+                    Ecosystem Diversity: This encompasses the variety of ecosystems in a given area, from forests and wetlands to grasslands and coral reefs. Each ecosystem provides unique services and functions that contribute to the planet's overall health.
+                    
+                    The Importance of Biodiversity
+                    Ecosystem Services: Biodiversity is vital for ecosystem services, which include pollination, nutrient cycling, soil formation, and water purification. Healthy ecosystems provide these services, supporting human life and the health of the planet.
+                    
+                    Food Security: Biodiversity is essential for agriculture. Different plant and animal species contribute to diverse diets and resilient food systems. Genetic diversity in crops and livestock is crucial for adapting to pests, diseases, and climate change.
+                    
+                    Medicinal Resources: Many medicines are derived from natural compounds found in plants, animals, and microorganisms. A rich diversity of species increases the chances of discovering new treatments for various diseases.
+                    
+                    Climate Regulation: Biodiverse ecosystems play a significant role in regulating the Earth's climate. Forests, for example, sequester carbon dioxide, helping to mitigate climate change.
+                    
+                    Cultural Significance: Biodiversity holds cultural and spiritual significance for many communities. Indigenous peoples, in particular, rely on local biodiversity for their traditions, livelihoods, and identity.
+                    
+                    Recreation and Tourism: Biodiversity attracts millions of tourists each year, providing economic benefits through eco-tourism. Natural areas are essential for recreational activities like hiking, birdwatching, and diving.
+                </p>
+            </div>
+
+            <!-- Images for Visual Appeal -->
+            <div class="images">
+                <img src="bio 1.jpg" alt="Biodiversity Image 1">
+                <img src="bio 2.jpg" alt="Biodiversity Image 2" style="margin-top: 20px;">
+            </div>
+
+            <!-- Embedded Video Explanation -->
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GK_vRtHJZu4?si=WRW_dLaVawhYUzg6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Biodiversity Awareness. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
